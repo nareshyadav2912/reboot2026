@@ -9,6 +9,8 @@ import org.hyperledger.fabric.contract.annotation.Info;
 import org.hyperledger.fabric.contract.annotation.Transaction;
 import org.hyperledger.fabric.shim.ChaincodeStub;
 
+import java.nio.charset.StandardCharsets;
+
 @Contract(
         name = "MortgageStatusContract",
         info = @Info(
@@ -23,7 +25,7 @@ public class MortgageStatusContract implements ContractInterface {
     private final Genson genson = new Genson();
 
     /**
-     * Check whether a mortgage case exists
+     * Check whether a mortgage case exists.
      */
     @Transaction(intent = Transaction.TYPE.EVALUATE)
     public boolean caseExists(Context ctx, String caseId) {
@@ -36,9 +38,10 @@ public class MortgageStatusContract implements ContractInterface {
     }
 
     /**
-     * Create Mortgage Case
+     * Create a new Mortgage Case.
+     * Only Broker (Org1MSP) can create.
      */
-    @Transaction
+    @Transaction(intent = Transaction.TYPE.SUBMIT)
     public void createCase(
             Context ctx,
             String caseId,
@@ -53,51 +56,75 @@ public class MortgageStatusContract implements ContractInterface {
 
         ChaincodeStub stub = ctx.getStub();
 
-        if (caseExists(ctx, caseId)) {
-            throw new RuntimeException("Mortgage case already exists");
+        // Only Org1 can create mortgage cases
+        String mspId = ctx.getClientIdentity().getMSPID();
+
+        if (!"Org1MSP".equals(mspId)) {
+            throw new RuntimeException("Only Broker (Org1MSP) can create mortgage cases.");
         }
 
-        MortgageCase mortgageCase = new MortgageCase(
-                caseId,
-                transactionId,
-                propertyReference,
-                buyerName,
-                sellerName,
-                brokerName,
-                lenderName,
-                conveyancerName,
-                estateAgentName,
-                MortgageStatus.CASE_CREATED.name(),
-                "Case Created",
-                "Broker",
-                brokerName,
-                "System",
-                stub.getTxTimestamp().toString(),
-                "VERIFIED",
-                "",
-                "NETWORK_STATUS_ONLY",
-                false,
-                "",
-                MortgageStatus.CONVEYANCER_ASSIGNED.name()
-        );
+        // Check if case already exists
+        if (caseExists(ctx, caseId)) {
+            throw new RuntimeException("Mortgage case already exists.");
+        }
 
-        stub.putStringState(caseId, genson.serialize(mortgageCase));
+        MortgageCase mortgageCase = new MortgageCase();
+
+        mortgageCase.setCaseId(caseId);
+        mortgageCase.setTransactionId(transactionId);
+        mortgageCase.setPropertyReference(propertyReference);
+
+        mortgageCase.setBuyerName(buyerName);
+        mortgageCase.setSellerName(sellerName);
+        mortgageCase.setBrokerName(brokerName);
+        mortgageCase.setLenderName(lenderName);
+        mortgageCase.setConveyancerName(conveyancerName);
+        mortgageCase.setEstateAgentName(estateAgentName);
+
+        mortgageCase.setStatusCode(MortgageStatus.CASE_CREATED.name());
+        mortgageCase.setStatusLabel("Case Created");
+
+        mortgageCase.setUpdatedByRole("BROKER");
+        mortgageCase.setUpdatedByOrg(mspId);
+
+        mortgageCase.setUpdatedBy("System");
+
+        mortgageCase.setTimestamp(stub.getTxTimestamp().toString());
+
+        mortgageCase.setConfidence("VERIFIED");
+        mortgageCase.setEvidenceHash("");
+        mortgageCase.setVisibilityLevel("NETWORK_STATUS_ONLY");
+
+        mortgageCase.setBlocker(false);
+        mortgageCase.setBlockerReason("");
+
+        mortgageCase.setNextExpectedEvent(
+                MortgageStatus.CONVEYANCER_ASSIGNED.name());
+
+        String mortgageJson = genson.serialize(mortgageCase);
+
+        stub.putStringState(caseId, mortgageJson);
+
+        // Publish blockchain event
+        stub.setEvent(
+                "CaseCreated",
+                mortgageJson.getBytes(StandardCharsets.UTF_8));
     }
 
     /**
-     * Read Mortgage Case
+     * Read Mortgage Case.
      */
     @Transaction(intent = Transaction.TYPE.EVALUATE)
     public MortgageCase readCase(Context ctx, String caseId) {
 
         ChaincodeStub stub = ctx.getStub();
 
-        String mortgageJSON = stub.getStringState(caseId);
+        String mortgageJson = stub.getStringState(caseId);
 
-        if (mortgageJSON == null || mortgageJSON.isEmpty()) {
-            throw new RuntimeException("Mortgage case not found");
+        if (mortgageJson == null || mortgageJson.isEmpty()) {
+            throw new RuntimeException("Mortgage case not found.");
         }
 
-        return genson.deserialize(mortgageJSON, MortgageCase.class);
+        return genson.deserialize(mortgageJson, MortgageCase.class);
     }
 }

@@ -69,31 +69,39 @@ public class MortgageCase {
     @Property
     private String nextExpectedStatus;
 
+    @Property
+    private String updatedBy;
+
+    @Property
+    private String nextExpectedEvent;
+
     // Required by Genson
     public MortgageCase() {
     }
 
     public MortgageCase(String caseId,
-                        String transactionId,
-                        String propertyReference,
-                        String buyerName,
-                        String sellerName,
-                        String brokerName,
-                        String lenderName,
-                        String conveyancerName,
-                        String estateAgentName,
-                        String statusCode,
-                        String statusLabel,
-                        String updatedByRole,
-                        String updatedByOrg,
-                        String updatedByUser,
-                        String timestamp,
-                        String confidence,
-                        String evidenceHash,
-                        String visibilityLevel,
-                        boolean blocker,
-                        String blockerReason,
-                        String nextExpectedStatus) {
+            String transactionId,
+            String propertyReference,
+            String buyerName,
+            String sellerName,
+            String brokerName,
+            String lenderName,
+            String conveyancerName,
+            String estateAgentName,
+            String statusCode,
+            String statusLabel,
+            String updatedByRole,
+            String updatedByOrg,
+            String updatedByUser,
+            String timestamp,
+            String confidence,
+            String evidenceHash,
+            String visibilityLevel,
+            boolean blocker,
+            String blockerReason,
+            String nextExpectedStatus,
+            String updatedBy,
+            String nextExpectedEvent) {
 
         this.caseId = caseId;
         this.transactionId = transactionId;
@@ -116,6 +124,8 @@ public class MortgageCase {
         this.blocker = blocker;
         this.blockerReason = blockerReason;
         this.nextExpectedStatus = nextExpectedStatus;
+        this.updatedBy = updatedBy;
+        this.nextExpectedEvent = nextExpectedEvent;
     }
 
     public String getCaseId() {
@@ -285,4 +295,21 @@ public class MortgageCase {
     public void setNextExpectedStatus(String nextExpectedStatus) {
         this.nextExpectedStatus = nextExpectedStatus;
     }
+
+    public String getUpdatedBy() {
+        return updatedBy;
+    }
+
+    public void setUpdatedBy(String updatedBy) {
+        this.updatedBy = updatedBy;
+    }
+
+    public String getNextExpectedEvent() {
+        return nextExpectedEvent;
+    }
+
+    public void setNextExpectedEvent(String nextExpectedEvent) {
+        this.nextExpectedEvent = nextExpectedEvent;
+    }
+
 }
