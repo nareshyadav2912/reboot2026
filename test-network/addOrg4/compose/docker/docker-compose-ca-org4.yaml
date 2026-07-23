@@ -1,0 +1,14 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+networks:
+  test:
+    name: fabric_test
+
+services:
+  ca_org4:
+    container_name: ca_org4
+    networks:
+      - test

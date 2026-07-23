@@ -1,0 +1,500 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Checkstyle Violations</title>
+        <style type="text/css">
+                    body {
+                        background-color: #fff;
+                        color: #02303A;
+                    }
+
+                    a {
+                        color: #1DA2BD;
+                    }
+                    a.link {
+                        color: #02303A;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    h1 a[name] {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    tr:nth-child(even) {
+                        background: white;
+                    }
+
+                    th {
+                        font-weight:bold;
+                    }
+                    tr {
+                        background: #efefef;
+                    }
+                    table th, td, tr {
+                        font-size:100%;
+                        border: none;
+                        text-align: left;
+                        vertical-align: top;
+                    }
+                </style>
+    </head>
+    <body>
+        <p>
+            <a name="top">
+                <h1>Checkstyle Results</h1>
+            </a>
+        </p>
+        <hr align="left" width="95%" size="1">
+        <h2>Summary</h2>
+        <table class="summary" width="95%">
+            <tr>
+                <th>Total files checked</th><th>Total violations</th><th>Files with violations</th>
+            </tr>
+            <tr>
+                <td>3</td><td>124</td><td>3</td>
+            </tr>
+        </table>
+        <hr align="left" width="95%" size="1">
+        <div class="violations">
+            <h2>Violations</h2>
+            <p>
+                <table class="filelist" width="95%">
+                    <tr>
+                        <th>File</th><th>Total violations</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#N65542">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageCase.java</a></td><td>107</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#N66304">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a></td><td>16</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#N66294">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a></td><td>1</td>
+                    </tr>
+                </table>
+                <p></p>
+                
+                <div class="file-violation">
+                    <h3>
+                        <a class="link" name="N65542">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageCase.java</a>
+                    </h3>
+                    <table class="violationlist" width="95%">
+                        <tr>
+                            <th>Severity</th><th>Description</th><th>Line Number</th>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>File does not end with a newline.</td><td>1</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>More than 7 parameters (found 21).</td><td>76</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>76</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter transactionId should be final.</td><td>77</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter propertyReference should be final.</td><td>78</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter buyerName should be final.</td><td>79</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter sellerName should be final.</td><td>80</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter brokerName should be final.</td><td>81</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter lenderName should be final.</td><td>82</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter conveyancerName should be final.</td><td>83</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter estateAgentName should be final.</td><td>84</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter statusCode should be final.</td><td>85</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter statusLabel should be final.</td><td>86</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByRole should be final.</td><td>87</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByOrg should be final.</td><td>88</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByUser should be final.</td><td>89</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter timestamp should be final.</td><td>90</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter confidence should be final.</td><td>91</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter evidenceHash should be final.</td><td>92</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter visibilityLevel should be final.</td><td>93</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter blocker should be final.</td><td>94</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter blockerReason should be final.</td><td>95</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter nextExpectedStatus should be final.</td><td>96</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getCaseId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getCaseId' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>121</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setCaseId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setCaseId' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>125</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>125</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'caseId' hides a field.</td><td>125</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getTransactionId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getTransactionId' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>129</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setTransactionId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setTransactionId' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>133</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter transactionId should be final.</td><td>133</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'transactionId' hides a field.</td><td>133</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getPropertyReference' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getPropertyReference' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>137</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setPropertyReference' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setPropertyReference' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>141</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter propertyReference should be final.</td><td>141</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'propertyReference' hides a field.</td><td>141</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getBuyerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getBuyerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>145</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setBuyerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setBuyerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>149</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter buyerName should be final.</td><td>149</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'buyerName' hides a field.</td><td>149</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getSellerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getSellerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>153</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setSellerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setSellerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>157</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter sellerName should be final.</td><td>157</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'sellerName' hides a field.</td><td>157</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getBrokerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getBrokerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>161</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setBrokerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setBrokerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>165</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter brokerName should be final.</td><td>165</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'brokerName' hides a field.</td><td>165</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getLenderName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getLenderName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>169</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setLenderName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setLenderName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>173</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter lenderName should be final.</td><td>173</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'lenderName' hides a field.</td><td>173</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getConveyancerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getConveyancerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>177</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setConveyancerName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setConveyancerName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>181</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter conveyancerName should be final.</td><td>181</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'conveyancerName' hides a field.</td><td>181</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getEstateAgentName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getEstateAgentName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>185</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setEstateAgentName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setEstateAgentName' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>189</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter estateAgentName should be final.</td><td>189</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'estateAgentName' hides a field.</td><td>189</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getStatusCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getStatusCode' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>193</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setStatusCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setStatusCode' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>197</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter statusCode should be final.</td><td>197</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'statusCode' hides a field.</td><td>197</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getStatusLabel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getStatusLabel' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>201</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setStatusLabel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setStatusLabel' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>205</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter statusLabel should be final.</td><td>205</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'statusLabel' hides a field.</td><td>205</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getUpdatedByRole' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getUpdatedByRole' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>209</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setUpdatedByRole' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setUpdatedByRole' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>213</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByRole should be final.</td><td>213</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'updatedByRole' hides a field.</td><td>213</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getUpdatedByOrg' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getUpdatedByOrg' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>217</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setUpdatedByOrg' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setUpdatedByOrg' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>221</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByOrg should be final.</td><td>221</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'updatedByOrg' hides a field.</td><td>221</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getUpdatedByUser' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getUpdatedByUser' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>225</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setUpdatedByUser' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setUpdatedByUser' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>229</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter updatedByUser should be final.</td><td>229</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'updatedByUser' hides a field.</td><td>229</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getTimestamp' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getTimestamp' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>233</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setTimestamp' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setTimestamp' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>237</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter timestamp should be final.</td><td>237</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'timestamp' hides a field.</td><td>237</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getConfidence' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getConfidence' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>241</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setConfidence' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setConfidence' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>245</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter confidence should be final.</td><td>245</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'confidence' hides a field.</td><td>245</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getEvidenceHash' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getEvidenceHash' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>249</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setEvidenceHash' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setEvidenceHash' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>253</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter evidenceHash should be final.</td><td>253</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'evidenceHash' hides a field.</td><td>253</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getVisibilityLevel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getVisibilityLevel' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>257</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setVisibilityLevel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setVisibilityLevel' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>261</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter visibilityLevel should be final.</td><td>261</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'visibilityLevel' hides a field.</td><td>261</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'isBlocker' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'isBlocker' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>265</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setBlocker' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setBlocker' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>269</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter blocker should be final.</td><td>269</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'blocker' hides a field.</td><td>269</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getBlockerReason' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getBlockerReason' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>273</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setBlockerReason' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setBlockerReason' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>277</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter blockerReason should be final.</td><td>277</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'blockerReason' hides a field.</td><td>277</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'getNextExpectedStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'getNextExpectedStatus' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>281</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageCase' looks like designed for extension (can be subclassed), but the method 'setNextExpectedStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageCase' final or making the method 'setNextExpectedStatus' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>285</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter nextExpectedStatus should be final.</td><td>285</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>'nextExpectedStatus' hides a field.</td><td>285</td>
+                        </tr>
+                    </table>
+                    <p></p>
+                    <a href="#top">Back to top</a>
+                    <p></p>
+                </div>
+                <div class="file-violation">
+                    <h3>
+                        <a class="link" name="N66294">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a>
+                    </h3>
+                    <table class="violationlist" width="95%">
+                        <tr>
+                            <th>Severity</th><th>Description</th><th>Line Number</th>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>File does not end with a newline.</td><td>1</td>
+                        </tr>
+                    </table>
+                    <p></p>
+                    <a href="#top">Back to top</a>
+                    <p></p>
+                </div>
+                <div class="file-violation">
+                    <h3>
+                        <a class="link" name="N66304">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a>
+                    </h3>
+                    <table class="violationlist" width="95%">
+                        <tr>
+                            <th>Severity</th><th>Description</th><th>Line Number</th>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>File does not end with a newline.</td><td>1</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>29</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>29</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>More than 7 parameters (found 10).</td><td>42</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>43</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>44</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter transactionId should be final.</td><td>45</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter propertyReference should be final.</td><td>46</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter buyerName should be final.</td><td>47</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter sellerName should be final.</td><td>48</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter brokerName should be final.</td><td>49</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter lenderName should be final.</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter conveyancerName should be final.</td><td>51</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter estateAgentName should be final.</td><td>52</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>91</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>91</td>
+                        </tr>
+                    </table>
+                    <p></p>
+                    <a href="#top">Back to top</a>
+                    <p></p>
+                </div>
+                <p></p>
+            </p>
+        </div>
+        <hr align="left" width="95%" size="1">
+        <p>
+            Generated by <a href="https://gradle.org">Gradle 9.1.0</a> with <a href="https://checkstyle.sourceforge.io/">Checkstyle 8.21</a>.
+        </p>
+    </body>
+</html>

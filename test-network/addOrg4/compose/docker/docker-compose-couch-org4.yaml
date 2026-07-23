@@ -1,0 +1,18 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+networks:
+  test:
+    name: fabric_test
+
+services:
+  couchdb4:
+    container_name: couchdb4
+    networks:
+      - test
+
+  peer0.org4.example.com:
+    networks:
+      - test
