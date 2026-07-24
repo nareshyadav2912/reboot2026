@@ -55,7 +55,7 @@
                 <th>Total files checked</th><th>Total violations</th><th>Files with violations</th>
             </tr>
             <tr>
-                <td>4</td><td>146</td><td>4</td>
+                <td>5</td><td>173</td><td>5</td>
             </tr>
         </table>
         <hr align="left" width="95%" size="1">
@@ -70,17 +70,60 @@
                         <td><a href="#N65542">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageCase.java</a></td><td>116</td>
                     </tr>
                     <tr>
-                        <td><a href="#N66405">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a></td><td>24</td>
+                        <td><a href="#N66471">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a></td><td>42</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#N66395">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/HistoryRecord.java</a></td><td>9</td>
                     </tr>
                     <tr>
                         <td><a href="#N66358">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusValidator.java</a></td><td>5</td>
                     </tr>
                     <tr>
-                        <td><a href="#N66395">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a></td><td>1</td>
+                        <td><a href="#N66461">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a></td><td>1</td>
                     </tr>
                 </table>
                 <p></p>
                 
+                <div class="file-violation">
+                    <h3>
+                        <a class="link" name="N66395">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/HistoryRecord.java</a>
+                    </h3>
+                    <table class="violationlist" width="95%">
+                        <tr>
+                            <th>Severity</th><th>Description</th><th>Line Number</th>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>File does not end with a newline.</td><td>1</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter txId should be final.</td><td>24</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter timestamp should be final.</td><td>25</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter deleted should be final.</td><td>26</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter mortgageCase should be final.</td><td>27</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'HistoryRecord' looks like designed for extension (can be subclassed), but the method 'getTxId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HistoryRecord' final or making the method 'getTxId' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>35</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'HistoryRecord' looks like designed for extension (can be subclassed), but the method 'getTimestamp' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HistoryRecord' final or making the method 'getTimestamp' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>39</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'HistoryRecord' looks like designed for extension (can be subclassed), but the method 'isDeleted' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HistoryRecord' final or making the method 'isDeleted' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>43</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'HistoryRecord' looks like designed for extension (can be subclassed), but the method 'getMortgageCase' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HistoryRecord' final or making the method 'getMortgageCase' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>47</td>
+                        </tr>
+                    </table>
+                    <p></p>
+                    <a href="#top">Back to top</a>
+                    <p></p>
+                </div>
                 <div class="file-violation">
                     <h3>
                         <a class="link" name="N65542">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageCase.java</a>
@@ -444,7 +487,7 @@
                 </div>
                 <div class="file-violation">
                     <h3>
-                        <a class="link" name="N66395">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a>
+                        <a class="link" name="N66461">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatus.java</a>
                     </h3>
                     <table class="violationlist" width="95%">
                         <tr>
@@ -460,7 +503,7 @@
                 </div>
                 <div class="file-violation">
                     <h3>
-                        <a class="link" name="N66405">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a>
+                        <a class="link" name="N66471">/Users/anilg/Desktop/fabric-samples/mortgage-platform/chaincode-java/src/main/java/org/blockchain/chaincode/MortgageStatusContract.java</a>
                     </h3>
                     <table class="violationlist" width="95%">
                         <tr>
@@ -470,73 +513,127 @@
                             <td>error</td><td>File does not end with a newline.</td><td>1</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter ctx should be final.</td><td>24</td>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>28</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter caseId should be final.</td><td>24</td>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>28</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>More than 7 parameters (found 10).</td><td>38</td>
+                            <td>error</td><td>More than 7 parameters (found 10).</td><td>42</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter ctx should be final.</td><td>39</td>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>43</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter caseId should be final.</td><td>40</td>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>44</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter transactionId should be final.</td><td>41</td>
+                            <td>error</td><td>Parameter transactionId should be final.</td><td>45</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter propertyReference should be final.</td><td>42</td>
+                            <td>error</td><td>Parameter propertyReference should be final.</td><td>46</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter buyerName should be final.</td><td>43</td>
+                            <td>error</td><td>Parameter buyerName should be final.</td><td>47</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter sellerName should be final.</td><td>44</td>
+                            <td>error</td><td>Parameter sellerName should be final.</td><td>48</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter brokerName should be final.</td><td>45</td>
+                            <td>error</td><td>Parameter brokerName should be final.</td><td>49</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter lenderName should be final.</td><td>46</td>
+                            <td>error</td><td>Parameter lenderName should be final.</td><td>50</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter conveyancerName should be final.</td><td>47</td>
+                            <td>error</td><td>Parameter conveyancerName should be final.</td><td>51</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter estateAgentName should be final.</td><td>48</td>
+                            <td>error</td><td>Parameter estateAgentName should be final.</td><td>52</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'updateStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'updateStatus' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>111</td>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'updateStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'updateStatus' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>115</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter ctx should be final.</td><td>113</td>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>117</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter caseId should be final.</td><td>114</td>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>118</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter newStatus should be final.</td><td>115</td>
+                            <td>error</td><td>Parameter newStatus should be final.</td><td>119</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter updatedByUser should be final.</td><td>116</td>
+                            <td>error</td><td>Parameter updatedByUser should be final.</td><td>120</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter confidence should be final.</td><td>117</td>
+                            <td>error</td><td>Parameter confidence should be final.</td><td>121</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter evidenceHash should be final.</td><td>118</td>
+                            <td>error</td><td>Parameter evidenceHash should be final.</td><td>122</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter ctx should be final.</td><td>192</td>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'getHistory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'getHistory' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>197</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter caseId should be final.</td><td>192</td>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>198</td>
                         </tr>
                         <tr>
-                            <td>error</td><td>Parameter status should be final.</td><td>205</td>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>198</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'getAllCases' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'getAllCases' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>226</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>227</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>248</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>248</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'getCasesByStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'getCasesByStatus' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>261</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>262</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter status should be final.</td><td>262</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'setBlocker' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'setBlocker' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>282</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>284</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>285</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter reason should be final.</td><td>286</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'clearBlocker' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'clearBlocker' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>315</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>317</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>318</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Class 'MortgageStatusContract' looks like designed for extension (can be subclassed), but the method 'deleteCase' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MortgageStatusContract' final or making the method 'deleteCase' static/final/abstract/empty, or adding allowed annotation for the method.</td><td>347</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter ctx should be final.</td><td>348</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter caseId should be final.</td><td>348</td>
+                        </tr>
+                        <tr>
+                            <td>error</td><td>Parameter status should be final.</td><td>380</td>
                         </tr>
                     </table>
                     <p></p>
